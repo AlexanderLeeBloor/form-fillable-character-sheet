@@ -1,0 +1,32 @@
+#character-essentials {
+	color: blue;
+}
+
+#character-stats {
+	color: green;	
+}
+
+#features-and-proficiencies {
+	color: purple;
+}
+
+#inventory {
+	color: #8B6914;
+}
+
+#roleplaying-notes {
+	color: orange;
+}
+
+#vitality {
+	color: red;
+}
+
+#combat-and-spellcasting {
+	color: #a2a2a2;
+}
+
+.display-stats {
+	display: inline;
+	text-decoration: underline;
+}

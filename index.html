@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Party Portal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<body onload><!-- onload="Character.getCharacterSheet()"-->
+	<h1>Dungeons &amp; Dragons</h1>
+	<h3 style="margin-top:-20px;">5e Character Sheet</h3>
+	<!--=====================================================-->
+	<!--Character Essentials-->
+	<!--=====================================================-->
+	<div id="character-essentials">
+	<h3>Character Essentials</h3>
+	<form>
+		<label>CHARACTER_NAME</label>
+		<input name="CHARACTER_NAME" type="text"/><br>
+
+		<label>CLASS_&amp;_LEVEL</label>
+		<input name="CLASS_LEVEL" type="text"/><br>
+
+		<label>RACE</label>
+		<input name="RACE" type="text"/><br>
+
+		<label>BACKGROUND</label>
+		<input name="BACKGROUND" type="text"/><br>
+
+		<label>ALIGNMENT</label>
+		<input name="ALIGNMENT" type="text"/><br>
+
+		<label>EXPERIENCE</label>
+		<input name="EXPERIENCE" type="number" min="0" max="9999999"/><br>
+
+		<label>PLAYER_NAME</label>
+		<input name="PLAYER_NAME" type="text"/>
+	</form><br>
+	</div>
+	<!--=====================================================-->
+	<!--Character Stats-->
+	<!--=====================================================-->
+	<div id="character-stats">
+	<h3>Character Stats</h3>
+	<form>
+		<label >PROFICIENCY_BONUS</label>
+		<input name="PROFICIENCY_BONUS" type="number" min="2" max="10"/><br>
+
+		<label>INSPIRATION</label>
+		<input name="INSPIRATION" type="checkbox"/>
+	</form><br>
+	<!--Stats-->
+	<form>
+		<label>STRENGTH</label>
+		<input name="STRENGTH" type="number" min="1" max="30"/><br>
+
+		<label>DEXTERITY</label>
+		<input name="DEXTERITY" type="number" min="1" max="30"/><br>
+
+		<label>CONSTITUTION</label>
+		<input name="CONSTITUTION" type="number" min="1" max="30"/><br>
+
+		<label>INTELLIGENCE</label>
+		<input name="INTELLIGENCE" type="number" min="1" max="30"/><br>
+
+		<label>WISDOM</label>
+		<input name="WISDOM" type="number" min="1" max="30"/><br>
+
+		<label>CHARISMA</label>
+		<input name="CHARISMA" type="number" min="1" max="30"/>
+	</form><br>
+
+	<!--Modifiers-->
+	<form>
+		<label>STR_MOD</label>
+		<input name="STR_MOD" type="number" min="-5" max="10"/><br>
+
+		<label>DEX_MOD</label>
+		<input name="DEX_MOD" type="number" min="-5" max="10"/><br>
+
+		<label>CON_MOD</label>
+		<input name="CON_MOD" type="number" min="-5" max="10"/><br>
+
+		<label>INT_MOD</label>
+		<input name="INT_MOD" type="number" min="-5" max="10"/><br>
+
+		<label>WIS_MOD</label>
+		<input name="WIS_MOD" type="number" min="-5" max="10"/><br>
+
+		<label>CHA_MOD</label>
+		<input name="CHA_MOD" type="number" min="-5" max="10"/>
+	</form><br>
+
+	<!--Skills and Saves-->
+	<form>
+		<input name="STR_SAVE_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="STR_SAVE">STR_SAVE</label><br>
+
+		<input name="ATHLETICS_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="ATHLETICS">ATHLETICS</label>
+	</form><br>
+
+	<form>
+		<input name="DEX_SAVE_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="DEX_SAVE">DEX_SAVE</label><br>
+
+		<input name="ACROBATICS_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="ACROBATICS">ACROBATICS</label><br>
+
+		<input name="SLEIGHT_OF_HAND_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="SLEIGHT_OF_HAND">SLEIGHT_OF_HAND</label><br>
+
+		<input name="STEALTH_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="STEALTH">STEALTH</label>
+	</form><br>
+
+	<form>
+		<input name="CON_SAVE_checkbox" type="checkbox"/>
+		<label name="CON_SAVE">CON_SAVE</label>
+	</form><br>
+
+	<form>
+		<input name="INT_SAVE_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="INT_SAVE">INT_SAVE</label><br>
+
+		<input name="ARCANA_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="ARCANA">ARCANA</label><br>
+
+		<input name="HISTORY_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="HISTORY">HISTORY</label><br>
+
+		<input name="INVESTIGATION_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="INVESTIGATION">INVESTIGATION</label><br>
+
+		<input name="NATURE_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="NATURE">NATURE</label><br>
+
+		<input name="RELIGION_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="RELIGION">RELIGION</label>
+	</form><br>
+
+	<form>
+		<input name="WIS_SAVE_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="WIS_SAVE">WIS_SAVE</label><br>
+
+		<input name="ANIMAL_HANDLING_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="ANIMAL_HANDLING">ANIMAL_HANDLING</label><br>
+
+		<input name="INSIGHT_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="INSIGHT">INSIGHT</label><br>
+
+		<input name="MEDICINE_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="MEDICINE">MEDICINE</label><br>
+
+		<input name="PERCEPTION_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="PERCEPTION">PERCEPTION</label><br>
+
+		<input name="SURVIVAL_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="SURVIVAL">SURVIVAL</label>
+	</form><br>
+
+	<form>
+		<input name="CHA_SAVE_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="CHA_SAVE">CHA_SAVE</label><br>
+
+		<input name="DECEPTION_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="DECEPTION">DECEPTION</label><br>
+
+		<input name="INTIMIDATION_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="INTIMIDATION">INTIMIDATION</label><br>
+
+		<input name="PERFORMANCE_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="PERFORMANCE">PERFORMANCE</label><br>
+
+		<input name="PERSUASION_checkbox" type="checkbox"/>
+		<p class="display-stats">_</p>
+		<label name="PERSUASION">PERSUASION</label>
+	</form><br>
+
+	<form>
+		<input name="PASSIVE_PERCEPTION_NUM" type="number" min="0" max="40"/>
+		<label name="PASSIVE_PERCEPTION">PASSIVE_PERCEPTION</label>
+	</form><br>
+	</div>
+	<!--=====================================================-->
+	<!--Non-Stat Abilities (racial, class, background, feats)-->
+	<!--=====================================================-->
+	<!--Features & Traits-->
+	<div id="features-and-proficiencies">
+	<h3>Features &amp; Proficiencies</h3>
+	<form>
+		<label>FEATURE_LIST</label>
+		<textarea name="FEATURE_LIST" placeholder="List your race, background, and class features here." type="text"></textarea>
+	</form><br>
+
+	<!--Other Proficiencies & Languages-->
+	<form>
+		<label>PROFICIENCY_LIST</label>
+		<textarea name="PROFICIENCY_LIST" placeholder="List your other proficiencies (all except skill and saving throw proficiencies) here." type="text"></textarea>
+	</form><br>
+	</div>
+	<!--=====================================================-->
+	<!--Inventory-->
+	<!--=====================================================-->
+	<!--Equipment-->
+	<div id="inventory">
+	<h3>Inventory</h3>
+	<form>
+		<label>EQUIPMENT_LIST</label>
+		<textarea name="EQUIPMENT_LIST" placeholder="List your equipment here." type="text"></textarea>
+	</form><br>
+
+	<!--Wealth-->
+	<form>
+		<label>COPPER_PIECES</label>
+		<input name="COPPER_PIECES" type="number" min="0" max="9999999"/><br>
+
+		<label>SILVER_PIECES</label>
+		<input name="SILVER_PIECES" type="number" min="0" max="9999999"/><br>
+
+		<label>ELECTRUM_PIECES</label>
+		<input name="ELECTRUM_PIECES" type="number" min="0" max="9999999"/><br>
+
+		<label>GOLD_PIECES</label>
+		<input name="GOLD_PIECES" type="number" min="0" max="9999999"/><br>
+
+		<label>PLATINUM_PIECES</label>
+		<input name="PLATINUM_PIECES" type="number" min="0" max="9999999"/>
+	</form><br>
+	</div>
+	<!--=====================================================-->
+	<!--Roleplaying Notes-->
+	<!--=====================================================-->
+	<!--Campaign Notes-->
+	<div id="roleplaying-notes">
+	<h3>Campaign Notes</h3>
+	<form>
+		<label>CAMPAIGN_NOTES</label>
+		<textarea name="CAMPAIGN_NOTES" placeholder="List your campaign notes here." type="text"></textarea>
+	</form><br>
+
+	<!--Character Persona-->
+	<h3>Character Notes</h3>
+	<form>
+		<label>PERSONALITY_TRAITS</label>
+		<textarea name="PERSONALITY_TRAITS" placeholder="What characteristics make you distinctive? Do you have any notable mannerisms?" type="text"></textarea><br>
+
+		<label>IDEALS</label>
+		<textarea name="IDEALS" placeholder="What do you strive for?" type="text"></textarea><br>
+
+		<label>BONDS</label>
+		<textarea name="BONDS" placeholder="How do you connect with the world?" type="text"></textarea><br>
+
+		<label>FLAWS</label>
+		<textarea name="FLAWS" placeholder="Do you have any imperfections or weaknesses?" type="text"></textarea><br>
+
+		<label>APPEARANCE</label>
+		<textarea name="APPEARANCE" placeholder="What are some of your physical qualities? Do you have any distinctive features, such as a birthmark or a mustache?" type="text"></textarea>
+	</form><br>
+	</div>
+	<!--=====================================================-->
+	<!--Vitality-->
+	<!--=====================================================-->
+	<div id="vitality">
+	<h3>Vitality</h3>
+	<form>
+		<label>MAX_HP</label>
+		<input name="MAX_HP" type="number" min="0" max="9999"/><br>
+
+		<label>CURRENT_HP</label>
+		<input name="CURRENT_HP" type="number" min="0" max="9999"/><br>
+
+		<label>MAX_HP_ADJUSTABLE</label>
+		<input name="MAX_HP_ADJUSTABLE" type="number" min="0" max="9999"/><br> <!--For temporary changes to max hp-->
+
+		<label>HIT_DICE_TOTAL</label>
+		<input name="HIT_DICE_TOTAL" type="number" min="1" max="30"/><br>
+
+		<label>HIT_DICE_CURRENT</label>
+		<input name="HIT_DICE_CURRENT" type="number" min="1" max="30"/><br>
+
+		<label>HIT_DICE_OUTOF</label>
+		<input name="HIT_DICE_OUTOF" type="number" min="4" max="20"/><br>
+
+		<label name="DEATH_SAVE_SUCCESSES">DEATH_SAVE_SUCCESSES</label>
+		<input name="SUCCESS_checkbox1" type="checkbox"/>
+		<input name="SUCCESS_checkbox2" type="checkbox"/>
+		<input name="SUCCESS_checkbox3" type="checkbox"/><br>
+
+		<label name="DEATH_SAVE_FAILURES">DEATH_SAVE_FAILURES</label>
+		<input name="FAILURE_checkbox1" type="checkbox"/>
+		<input name="FAILURE_checkbox2" type="checkbox"/>
+		<input name="FAILURE_checkbox3" type="checkbox"/>
+	</form><br>
+	</div>
+	<!--=====================================================-->
+	<!--Combat and Spellcasting-->
+	<!--=====================================================-->
+	<div id="combat-and-spellcasting">
+	<!--Misc-->
+	<form>
+		<label>ARMOR_CLASS</label>
+		<input name="ARMOR_CLASS" type="number" min="1" max="40"/><br>
+
+		<label>INITIATIVE</label>
+		<input name="INITIATIVE" type="number" min="-5" max="30"/><br>
+
+		<label>SPEED</label>
+		<input name="SPEED" type="number" min="0" max="200"/>
+	</form><br>
+	<!--Attacks-->
+	<h3>Attacks</h3>
+	<form>
+		<label>WEAPON_1</label>
+		<input name="WEAPON_1" type="text"/>
+		<input name="ATTACK_ROLL_1" type="text"/>
+		<input name="WEAPON_DAMAGE_1" type="text"/><br>
+
+		<label>WEAPON_2</label>
+		<input name="WEAPON_2" type="text"/>
+		<input name="ATTACK_ROLL_2" type="text"/>
+		<input name="WEAPON_DAMAGE_2" type="text"/><br>
+
+		<label>WEAPON_3</label>
+		<input name="WEAPON_3" type="text"/>
+		<input name="ATTACK_ROLL_3" type="text"/>
+		<input name="WEAPON_DAMAGE_3" type="text"/>
+	</form><br>
+	<!--Combat Notes-->
+	<h3>Combat Notes</h3>
+	<form>
+		<label>COMBAT_NOTES</label>
+		<textarea name="COMBAT_NOTES" placeholder="List your combat notes here!" type="text"></textarea>
+	</form><br>
+	<!--Spellcasting-->
+	<h3>Spellcasting</h3>
+	<form>
+		<label>SPELL_SAVE_DC</label>
+		<input name="SPELL_SAVE_DC" type="number" min="1" max="30"/><br>
+
+		<label>SPELL_ATTACK_MOD</label>
+		<input name="SPELL_ATTACK_MOD" type="number" min="-5" max="40"/><br><br>
+
+		<h3>Spell Slots</h3>
+		<label>SPELL_SLOTS_LVL1</label>
+		<input name="SPELL_SLOTS_LVL1" type="number" min="0" max="20" style="width:35px;"/>
+
+		<label>SPELL_SLOTS_LVL2</label>
+		<input name="SPELL_SLOTS_LVL2" type="number" min="0" max="20" style="width:35px;"/>
+
+		<label>SPELL_SLOTS_LVL3</label>
+		<input name="SPELL_SLOTS_LVL3" type="number" min="0" max="20" style="width:35px;"/>
+
+		<label>SPELL_SLOTS_LVL4</label>
+		<input name="SPELL_SLOTS_LVL4" type="number" min="0" max="20" style="width:35px;"/>
+
+		<label>SPELL_SLOTS_LVL5</label>
+		<input name="SPELL_SLOTS_LVL5" type="number" min="0" max="20" style="width:35px;"/>
+
+		<label>SPELL_SLOTS_LVL6</label>
+		<input name="SPELL_SLOTS_LVL6" type="number" min="0" max="20" style="width:35px;"/>
+
+		<label>SPELL_SLOTS_LVL7</label>
+		<input name="SPELL_SLOTS_LVL7" type="number" min="0" max="20" style="width:35px;"/>
+
+		<label>SPELL_SLOTS_LVL8</label>
+		<input name="SPELL_SLOTS_LVL8" type="number" min="0" max="20" style="width:35px;"/>
+
+		<label>SPELL_SLOTS_LVL9</label>
+		<input name="SPELL_SLOTS_LVL9" type="number" min="0" max="20" style="width:35px;"/>
+	</form><br>
+	<!--Spell List-->
+	<h3>Spell List</h3>
+	<form>
+		<label>SPELL_LIST</label>
+		<textarea name="SPELL_LIST" placeholder="List your spells (and any notes) here!" type="text"></textarea>
+	</form><br>
+	</div>
+
+	<!--=====================================================-->
+	<button id="save-changes">Save Changes</button> 
+	<!--=====================================================-->
+	<script src="angular.min.js" language="JavaScript" type="text/javascript"></script>
+	<script src="script.js" language="JavaScript" type="text/javascript"></script>
+</body>
+</html>
+<!--
+Stuff to make:
+package.json // Lists all the dependencies for a project -> "npm install" will open this file and download all the dependencies
+app.js // Connects to db, seeds db (if necessary?), sets up server, starts server, exposes app
+views directory // A place you can put all the views you have. 404 Page Not Found, etc
+config directory // Configure everything. Set up middleware etc
+config -> environment directory // development.js, index.js, production.js, test.js
+components directory // Not sure what goes here
+authentication directory // Probably don't need?
+api directory // subdirectories for things, which have files that define their behaviour (i.e. models, controllers, sockets, events, etc.) with javascript files
+-->
